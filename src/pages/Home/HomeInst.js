@@ -1,9 +1,10 @@
 
-import styles from "./Home.module.css"
+import styles from "./HomeInst.module.css"
 import persona from "../../imgs/persona.jpg"
+import logo from "../../imgs/logo.png"
 
 
-function Home(){
+function HomeInst(){
     return(
         <div>
              <head>
@@ -17,7 +18,8 @@ function Home(){
                 <link rel="shortcut icon" href="../imagens/shortcut_aba.png" type="image/x-icon" />
                 <title>Lumni | Perfil</title>
              </head>
-            
+             <body>
+                <main>
              <div className={styles.perfil_container}>
     
                 <img src={persona} alt="persona"/>
@@ -38,9 +40,17 @@ function Home(){
                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                 </svg>
             </div>
-             
+           
+            </main>
+            <div className={styles.footer}>
+
+                <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
+                <p>Produzido por <a>Guardiões Tech</a></p>
+
+            </div>
+            </body>
         </div>
     )
 }
 
-export default Home
+export default HomeInst

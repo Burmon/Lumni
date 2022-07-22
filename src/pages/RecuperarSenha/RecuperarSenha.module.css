@@ -1,0 +1,186 @@
+body{
+    background-image: url(../../imgs/bg.png);
+}
+    
+    main{
+        display: flex;
+        font-family: 'Abel';
+        justify-content: center;
+        flex-direction: column;
+        margin: 3rem 4rem;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        
+        
+    }
+    .logo img {
+    
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        
+    }
+    
+    .logo h1{
+        font-family: 'Amatic SC';
+        font-weight: bolder;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #1162AD;
+        font-size: 25px;
+    }
+
+    .logo h2{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #1162AD;
+        font-size: 50px;
+
+    }
+
+    .logo h3{
+        font-size: 25px;
+    }
+    
+    .input_recuperacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    
+    }
+    
+    .input_recuperacao input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font: inherit;
+        border-radius: 50px;
+        border: solid 0.5px #1162AD;
+        background-color: #FFFFFF;   
+        text-align: center;
+    
+    }
+    
+    .input_recuperacao button{
+        padding: 0.8rem 0;
+        background-color: #FFE071;
+        border: none;
+        border-radius: 25px;
+        width: 70%;
+        color: #1162AD;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        cursor: pointer;
+        
+        
+    }
+    
+    @media  screen and (min-width: 768px) {
+  
+        body{
+            background-color: #1162AD;
+            background-image: none;
+            
+        }
+    
+        main{
+            display: flex;
+            font-family: 'Abel';
+            justify-content: center;
+            flex-direction: column;
+            background-image: url(../../imgs/bg.png);
+            border-radius: 25px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            
+        }
+        .logo img {
+        
+            width: 4rem;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .logo h1{
+            font-family: 'Amatic SC';
+            font-weight: bolder;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #1162AD;
+            font-size: 15px;        }
+
+        .logo h2{
+            margin-top: 1rem;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #1162AD;
+            font-size: 50px;
+        }
+        
+        .input_recuperacao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0.5rem;
+            margin-bottom: 1rem;
+        
+        }
+        
+        .input_recuperacao input{
+            width: 25%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font: inherit;
+            border-radius: 50px;
+            border: solid 0.5px #1162AD;
+            background-color: #FFFFFF;   
+            color: #1162AD;
+            text-align: center;
+        }
+
+       
+        .input_recuperacao button{
+            padding: 0.8rem 0;
+            margin-top: 1rem;
+            background-color: #FFE071;
+            border: none;
+            border-radius: 25px;
+            width: 15%;
+            color: #1162AD;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: pointer;
+            transition: background .4s;
+        }
+    
+        .input_recuperacao button:hover{
+            background-color: #1162AD;
+            color: #FFE071;
+    
+        }
+
+        
+    }
+        

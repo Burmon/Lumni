@@ -1,0 +1,202 @@
+body{
+    background-image: url(../../imgs/bg.png); 
+  }
+  
+ 
+ 
+  
+ 
+  
+    .perfil_aluno_container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 5rem 0;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background-color: #FFE071;
+      border-radius: 25px;
+      
+      
+    }
+  
+    .perfil_aluno_container img{
+  
+      width: 40%;
+      margin-bottom: 1rem;
+  
+    }
+  
+    .perfil_aluno_container h1, h2{
+      font-family: "Abel";
+      
+    }
+  
+    .perfil_aluno_container h1{
+      font-size: 30px;
+      color: #1162AD;
+      letter-spacing: 5px;
+      margin-bottom: 1rem;
+      
+    }
+  
+    .perfil_aluno_container h2{
+      font-size: 20px;
+      color: #FFFFFF;
+      letter-spacing: 3px;
+    }
+  
+    
+    .input_intitucional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    
+    }
+    
+    .input_intitucional input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font: inherit;
+        border-radius: 50px;
+        border: solid 0.5px #1162AD;
+        background-color: #FFFFFF;   
+        text-align: center;
+    
+    }
+    
+    .input_intitucional button{
+        padding: 0.8rem 0;
+        background-color: #1162AD;
+        border: none;
+        border-radius: 25px;
+        width: 70%;
+        color: #FFE071;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        cursor: pointer;
+        
+        
+    }
+  
+  
+
+  .footer{
+    background-color: #1162AD;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img_footer{
+    width: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer p{
+    color: #FFFFFF;
+    font-family: "Abel";
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.footer a{
+    color: #FFE071;
+}
+  
+  @media  screen and (min-width: 768px){
+
+   
+
+  main{
+      display: flex;
+      font-family: 'Abel';
+      justify-content: center;
+      flex-direction: column;
+      background-image: url(../../imgs/bg.png);
+      border-radius: 25px;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      
+  }
+
+
+  .perfil_aluno_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 35% 0rem;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFE071;
+    border-radius: 25px;
+    width: 30%;
+    
+  }
+
+  .perfil_aluno_container img{
+
+    width: 50%;
+
+  }
+
+  .form_cad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.input_intitucional input{
+    width: 25%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font: inherit;
+    border-radius: 50px;
+    border: solid 0.5px #1162AD;
+    background-color: #FFFFFF;   
+    color: #1162AD;
+    text-align: center;
+}
+
+
+.input_intitucional button{
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    
+    border: none;
+    border-radius: 25px;
+    width: 15%;
+   
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.input_intitucional button:hover{
+    background-color: #FFE071;
+    color: #1162AD;
+
+}
+    
+
+}
+
+
+  
