@@ -2,17 +2,7 @@ body{
     background-image: url(../../imgs/bg.png); 
   }
   
-  /* --------MENU-------- */
   
-  #header {
-      box-sizing: border-box;
-      height: 3.5rem;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      background: #FFE071;
-      
-    }
   
   
   
@@ -77,9 +67,10 @@ body{
   #mural{
     text-align: center;
     background-color: #FFE071;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
   }
   
   #mural h4{
@@ -118,10 +109,47 @@ body{
     cursor: pointer;
     margin-bottom: 2rem;
   }
+
+  .footer{
+    background-color: #1162AD;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img_footer{
+    width: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer p{
+    color: #FFFFFF;
+    font-family: "Abel";
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.footer a{
+    color: #FFE071;
+}
   
   @media  screen and (min-width: 768px){
 
    
+
+  main{
+      display: flex;
+      font-family: 'Abel';
+      justify-content: center;
+      flex-direction: column;
+      background-image: url(../../imgs/bg.png);
+      border-radius: 25px;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      
+  }
 
 
   .perfil_container{
