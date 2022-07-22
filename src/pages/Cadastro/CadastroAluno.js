@@ -1,15 +1,11 @@
-
-import styles from "./Login.module.css"
+import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
 
-
-function Login(){
-
-  
-
+function CadastroAluno(){
     return(
         <div>
-            <head>
+
+<head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -31,9 +27,9 @@ function Login(){
 
                     </div>
 
-                    <div className={styles.login}>
+                    <div className={styles.input_cad}>
    
-                        <form className={styles.formulario}>
+                        <form className={styles.form_cad}>
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
@@ -42,35 +38,20 @@ function Login(){
                         </form>
 
 
-                        <div className={styles.checkbox}>
-
-                            <input type="checkbox" id={styles.permacon} name="permanecer conectado" value="Permanecer conectado"/>
-                            <label for="vehicle1">Permanecer conectado</label> 
-
-                        </div>
+            
                       </div>
 
-                      <section className={styles.links}>
-
-                        <a href="#" id={styles.link1}>Esqueci minha senha</a>
-                        <a href="#" id={styles.link2}>Inscreva-se</a>
-
-                      </section>
 
                      
 
                  </main>
-               <div className={styles.footer}>
-
-                 <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
-                 <p>Produzido por <a>Guardiões Tech</a></p>
-  
-               </div>
+               
             </body>
 
-        </div>
 
-       
+
+        </div>
     )
 }
-export default Login
+
+export default CadastroAluno

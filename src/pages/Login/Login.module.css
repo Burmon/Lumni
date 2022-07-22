@@ -69,12 +69,10 @@ body{
         letter-spacing: 5px;
         cursor: pointer;
         
+        
     }
     
-    .formulario button a{
-        text-decoration: none;
-        color: #1162AD;
-    }
+    
     
     .checkbox{
         margin: 1rem 0;
@@ -193,7 +191,8 @@ body{
             color: #1162AD;
             text-align: center;
         }
-        
+
+       
         .formulario button{
             padding: 0.8rem 0;
             background-color: #FFE071;
@@ -215,11 +214,7 @@ body{
     
         }
         
-        button a:hover{
-    
-            color: #FFE071;
-    
-        }
+        
     
         .checkbox{
             margin: 1rem 26.7rem;

@@ -1,5 +1,5 @@
-import styles from "./Perfil.module.css"
-import persona from "../imgs/persona.jpg"
+import styles from "./Home.module.css"
+import persona from "../../imgs/persona.jpg"
 
 
 function Home(){

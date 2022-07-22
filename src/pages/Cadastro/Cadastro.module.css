@@ -1,0 +1,109 @@
+body{
+    background-image: url(../../imgs/bg.png);
+   
+}
+
+
+main{
+    display: flex;
+    font-family: 'Abel';
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 4rem;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    
+    
+}
+.logo img {
+
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    
+}
+
+.logo h1{
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #1162AD;
+    font-size: 30px;
+}
+
+.titulo{
+    text-align: center;
+    color: #1162AD;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 4rem;
+    font-weight: bold;
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.botoes button{
+    padding: 0.8rem 0;
+    background-color: #FFE071;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    color: #1162AD;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+@media  screen and (min-width: 768px) {
+  
+    body{
+        background-color: #1162AD;
+        background-image: none;
+        
+    }
+
+    main{
+        display: flex;
+        font-family: 'Abel';
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../../imgs/bg.png);
+        border-radius: 25px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+    }
+
+    .botoes button{
+        width: 30%;
+        transition: background .4s;
+    }
+
+    .botoes button:hover{
+        background-color: #1162AD;
+        color: #FFE071;
+    }
+
+
+}
+
+
+ 
