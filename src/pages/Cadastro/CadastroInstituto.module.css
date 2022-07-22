@@ -50,7 +50,7 @@ body{
         font-size: 25px;
     }
     
-    .form_cad {
+    .form_cad_inst {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@ body{
     
     }
     
-    .form_cad input{
+    .form_cad_inst input{
         width: 100%;
         padding: 1rem;
         margin-bottom: 1rem;
@@ -70,7 +70,7 @@ body{
     
     }
     
-    .form_cad button{
+    .form_cad_inst button{
         padding: 0.8rem 0;
         background-color: #FFE071;
         border: none;
@@ -137,7 +137,7 @@ body{
             font-size: 50px;
         }
         
-        .form_cad {
+        .form_cad_inst {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -146,7 +146,7 @@ body{
         
         }
         
-        .form_cad input{
+        .form_cad_inst input{
             width: 25%;
             padding: 1rem;
             margin-bottom: 1rem;
@@ -159,7 +159,7 @@ body{
         }
 
        
-        .form_cad button{
+        .form_cad_inst button{
             padding: 0.8rem 0;
             margin-top: 1rem;
             background-color: #FFE071;
@@ -175,7 +175,7 @@ body{
             transition: background .4s;
         }
     
-        .form_cad button:hover{
+        .form_cad_inst button:hover{
             background-color: #1162AD;
             color: #FFE071;
     

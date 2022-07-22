@@ -1,4 +1,4 @@
-
+import {  Link } from "react-router-dom";
 import styles from "./Login.module.css"
 import logo from "../../imgs/logo.png"
 
@@ -37,7 +37,7 @@ function Login(){
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit" onClick="#">Entrar</button>
+                            <button type="button">Entrar</button>
 
                         </form>
 

@@ -1,11 +1,11 @@
-import styles from './CadastroAluno.module.css'
+import styles from './CadastroInstituto.module.css'
 import logo from "../../imgs/logo.png"
 
-function CadastroAluno(){
+function CadastroInstituto(){
     return(
         <div>
 
-<head>
+            <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -25,14 +25,14 @@ function CadastroAluno(){
                        <img src={logo} alt="Logo"/>
                         <h1>LUMNI</h1>
                         <h2>Cadastro</h2>
-                        <h3>Estudante</h3>
+                        <h3>Instituto</h3>
 
                     </div>
 
-                    <div className={styles.input_cad}>
+                    <div className={styles.input_cad_inst}>
         
-                        <form className={styles.form_cad}>
-                            <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
+                        <form className={styles.form_cad_inst}>
+                            <input type="name" name="nome" id={styles.nome} placeholder="Nome da instituição"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
                             <button type="submit" onClick="#">Cadastrar</button>
@@ -56,4 +56,4 @@ function CadastroAluno(){
     )
 }
 
-export default CadastroAluno
+export default CadastroInstituto
