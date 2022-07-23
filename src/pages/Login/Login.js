@@ -37,7 +37,7 @@ function Login(){
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="button">Entrar</button>
+                            <button type="button"><Link to='/homeinst'>Entrar</Link></button>
 
                         </form>
 
@@ -52,8 +52,8 @@ function Login(){
 
                       <section className={styles.links}>
 
-                        <a href="#" id={styles.link1}>Esqueci minha senha</a>
-                        <a href="#" id={styles.link2}>Inscreva-se</a>
+                        <Link to='/recuperarsenha' id={styles.link1}>Esqueci minha senha</Link>
+                        <Link to='/cadastro' id={styles.link2}>Inscreva-se</Link>
 
                       </section>
 

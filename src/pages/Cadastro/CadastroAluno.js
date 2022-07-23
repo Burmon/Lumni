@@ -1,5 +1,6 @@
 import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
+import { Link } from 'react-router-dom';
 
 function CadastroAluno(){
     return(
@@ -35,7 +36,8 @@ function CadastroAluno(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit" onClick="#">Cadastrar</button>
+                            <button type="submit" ><Link to='/homealuno'>Cadastrar</Link></button>
+                            
 
                         </form>
 

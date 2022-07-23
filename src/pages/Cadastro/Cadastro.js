@@ -1,5 +1,6 @@
 import styles from "./Cadastro.module.css"
 import logo from "../../imgs/logo.png"
+import { Link } from 'react-router-dom'
 
 function Cadastro(){
    return(
@@ -27,9 +28,9 @@ function Cadastro(){
                     </div>
                     <h1 className={styles.titulo}>Você é:</h1>
                     <div className={styles.botoes}>
-                        <button>Aluno</button>
+                        <button><Link to='/cadastroaluno'>Aluno</Link></button>
                         <button>Instituição</button>
-                        <button>Professor</button>
+                        <button><Link to='/cadastroinstituto'>Professor</Link></button>
 
 
                     </div>
