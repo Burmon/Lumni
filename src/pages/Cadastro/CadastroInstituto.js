@@ -1,5 +1,6 @@
 import styles from './CadastroInstituto.module.css'
 import logo from "../../imgs/logo.png"
+import { Link } from 'react-router-dom'
 
 function CadastroInstituto(){
     return(
@@ -35,7 +36,7 @@ function CadastroInstituto(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Nome da instituição"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit" onClick="#">Cadastrar</button>
+                            <button type="submit"><Link to='/homeinst'>Cadastrar</Link></button>
 
                         </form>
 

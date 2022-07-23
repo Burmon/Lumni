@@ -1,5 +1,6 @@
 import styles from "./RecuperarSenha.module.css"
 import logo from "../../imgs/logo.png"
+import { Link } from 'react-router-dom'
 
 
 function RecuperarSenha(){
@@ -30,7 +31,7 @@ function RecuperarSenha(){
 
             <div className={styles.input_recuperacao}>
             <input type="email" name="email"  placeholder="Seu e-mail"></input>
-            <button type="submit" onClick="#">Enviar</button>
+            <button type="submit"><Link to='/recuperarsenha'>Enviar</Link></button>
             </div>
             
             </main>

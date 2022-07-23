@@ -1,7 +1,7 @@
 import styles from "./HomeAluno.module.css"
 import persona_aluno from "../../imgs/persona_aluno.png"
 import logo from "../../imgs/logo.png"
-
+import {Link} from 'react-router-dom';
 
 function HomeAluno(){
     return(
