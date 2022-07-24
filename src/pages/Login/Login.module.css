@@ -70,8 +70,17 @@ body{
         cursor: pointer;
         
         
+        
     }
     
+    .botao{
+        text-decoration: none;
+        transition: all;
+        color: #1162AD;
+    }
+    .botao p:hover{
+       color: #FFE071;
+    }
     
     
     .checkbox{
