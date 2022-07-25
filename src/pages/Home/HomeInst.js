@@ -2,9 +2,14 @@
 import styles from "./HomeInst.module.css"
 import persona from "../../imgs/persona.jpg"
 import logo from "../../imgs/logo.png"
+import { useState } from "react";
+import {Menu}  from "../../components/Menu/Menu";
+import {Header} from "../../components/Header/Header"
 
 
 function HomeInst(){
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+
     return(
         <div>
              <head>
@@ -18,6 +23,13 @@ function HomeInst(){
                 <link rel="shortcut icon" href="../imagens/shortcut_aba.png" type="image/x-icon" />
                 <title>Lumni | Perfil</title>
              </head>
+             <Menu
+                menuIsVisible={menuIsVisible}
+                setMenuIsVisible={setMenuIsVisible}
+            />
+            
+             <Header setMenuIsVisible={setMenuIsVisible}/>
+
              <body>
                 <main>
              <div className={styles.perfil_container}>

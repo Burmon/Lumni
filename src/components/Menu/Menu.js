@@ -1,25 +1,23 @@
-import {Container} from "./Menu.module"
-import {IoClose} from 'react-icons/io5'
-import { Link } from "react-router-dom"
+import { Container } from './Menu.module';
+import { IoClose } from 'react-icons/io5';
+import { useEffect } from 'react';
 
+export function Menu({ menuIsVisible, setMenuIsVisible }) {
+  useEffect(() => {
+    document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
+  }, [menuIsVisible]);
 
- function Menu({menuIsVisible,setMenuIsVisible}){
-    return(
-        <Container>
-            <IoClose size={45}/>
-            <nav>
-                <Link ><p>Home</p></Link>
-                <Link ><p>Nosso time</p></Link>
-                <Link  to={'/'}><p>Sair</p></Link>
-
-            </nav>
-
-
-        </Container>
-    )
+  return (
+    <Container isVisible={menuIsVisible}>
+      <IoClose size={50} onClick={() => setMenuIsVisible(false) } className="fechar"/>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Nosso time</a>
+        <a href="#">Sair</a>
+      </nav>
+    </Container>
+  )
 }
-
-export default Menu
 
 
 
