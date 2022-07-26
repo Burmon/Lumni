@@ -37,7 +37,7 @@ function Login(){
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="button"><Link to='/homeinst'>Entrar</Link></button>
+                            <button type="button"><Link className={styles.botao} to='/homeinst'><p>Entrar</p></Link></button>
 
                         </form>
 

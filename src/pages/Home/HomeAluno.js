@@ -1,9 +1,15 @@
 import styles from "./HomeAluno.module.css"
 import persona_aluno from "../../imgs/persona_aluno.png"
 import logo from "../../imgs/logo.png"
-import {Link} from 'react-router-dom';
+import { useState } from "react";
+import {Menu}  from "../../components/Menu/Menu";
+import {Header} from "../../components/Header/Header"
+
 
 function HomeAluno(){
+
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+
     return(
         <div>
              <head>
@@ -17,8 +23,17 @@ function HomeAluno(){
                 <link rel="shortcut icon" href="../imagens/shortcut_aba.png" type="image/x-icon" />
                 <title>Lumni | Perfil</title>
              </head>
+             <Menu
+                menuIsVisible={menuIsVisible}
+                setMenuIsVisible={setMenuIsVisible}
+            />
+            
+             <Header setMenuIsVisible={setMenuIsVisible}/>
              <body>
+            
                 <main>
+              
+               
              <div className={styles.perfil_aluno_container}>
     
                 <img src={persona_aluno} alt="persona"/>
