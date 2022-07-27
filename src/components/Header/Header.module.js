@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   width: 100%;
-  background: #1162AD;
-  
-  padding: 14.5px 64px;
+  background: #1162AD; 
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,26 +34,13 @@ export const Container = styled.header`
         color: #FFE071;
        
 
-        &:before {
-          content: '';
-          border-radius: 50px;
-          bottom: 0px;
-          position: absolute;
-          width: 0%;
-          height: 2px;
-          background: #3CA63A;
-          transition: .3s;
-        }
 
-        &:hover {
-          &:before {
-            width: 100%;
-          }
-        }
+
+      
       }
     }
     .mobile {
-      display: none;
+     
       color: #FFE071;
       
     }
