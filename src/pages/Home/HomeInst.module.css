@@ -14,11 +14,11 @@ body{
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin: 5rem 0;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      margin: 3rem 0;
+    
+      width: 10  0%;
+     
+     
       background-color: #1162AD;
       border-radius: 25px;
       
@@ -27,11 +27,13 @@ body{
     .perfil_container img{
   
       width: 40%;
-  
+      margin-top: 4rem;
+     
     }
   
     .perfil_container h1, h2{
       font-family: "Abel";
+      
       
     }
   
@@ -45,6 +47,8 @@ body{
     .perfil_container h2{
       font-size: 30px;
       color: #FFFFFF;
+      margin-bottom: 2rem;
+  
     }
   
   /* -------MURAL------- */
@@ -168,9 +172,17 @@ body{
   }
 
   .perfil_container img{
-
+    margin-bottom: 2rem;
     width: 50%;
 
+  }
+
+  .perfil_container h1{
+    margin-bottom: 1rem;
+  }
+
+  .perfil_container h2{
+    margin-bottom: 0;
   }
 
 #mural{
