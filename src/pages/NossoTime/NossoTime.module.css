@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    font-family: 'Abel';
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 4rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+    
+}
+.logo img {
+
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    
+}
+
+.logo h1{
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #1162AD;
+    font-size: 30px;
+}
+
+
+
+.cartao_container img{
+    width: 100%;   
+    border-radius: 10% 10% 0% 0%;
+}
