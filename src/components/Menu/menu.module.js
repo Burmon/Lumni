@@ -39,7 +39,7 @@ export const Container = styled.section`
     transition: .7s;
   }
 
-  a{
+  .linkmenu{
     font-family:"Abel";
     text-decoration:none;
     color:#1162AD;
