@@ -1,8 +1,12 @@
+import { useState } from "react";
 import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
-import { Link } from 'react-router-dom';
+import Modal from '../../components/Modal';
 
 function CadastroAluno(){
+
+    const [openModal, setOpenModal] = useState(false);
+
     return(
         <div>
 
@@ -36,7 +40,16 @@ function CadastroAluno(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit" ><Link  className={styles.botao_cad_aluno} to='/homealuno'>Cadastrar</Link></button>
+                            <button
+                             className="openModalBtn"
+                             onClick={() => {
+                                setOpenModal(true);
+                                }}
+                                >
+                                Cadastrar
+                            </button>
+                            {openModal && <Modal closeModal={setOpenModal} />}
+                            
                             
 
                         </form>
