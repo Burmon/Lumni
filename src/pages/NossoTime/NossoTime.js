@@ -3,8 +3,8 @@ import logo from "../../imgs/logo.png";
 import { useState } from "react";
 import {Menu}  from "../../components/Menu/Menu";
 import {Header} from "../../components/Header/Header";
-import foto_matheus from "../../imgs/foto_matheus.jpeg";
-import foto_vitoria from "../../imgs/foto_vitoria.jpg"
+import foto_matheus from "../../imgs/foto_matheus.png";
+import foto_vitoria from "../../imgs/foto_virotix.png"
 import { GoMarkGithub } from "react-icons/go";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
