@@ -166,7 +166,6 @@ body{
             border: none;
             border-radius: 25px;
             width: 15%;
-            color: #1162AD;
             font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
@@ -177,8 +176,18 @@ body{
     
         .form_cad button:hover{
             background-color: #1162AD;
-            color: #FFE071;
+          
     
+        }
+
+        .botao_cad_aluno{
+            text-decoration: none;
+            color: #1162AD;
+            transition: all .4s;
+        }
+
+        .botao_cad_aluno:hover{
+            color: #FFE071;
         }
     }
         

@@ -36,7 +36,7 @@ function CadastroAluno(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit" ><Link to='/homealuno'>Cadastrar</Link></button>
+                            <button type="submit" ><Link  className={styles.botao_cad_aluno} to='/homealuno'>Cadastrar</Link></button>
                             
 
                         </form>
