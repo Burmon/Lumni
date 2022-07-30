@@ -17,7 +17,7 @@ main{
 }
 .logo img {
 
-    width: 5rem;
+    width: 4rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -30,12 +30,79 @@ main{
     letter-spacing: 5px;
     text-align: center;
     color: #1162AD;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+.logo h2{
+    color: #1162AD;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
     font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.cartao_container{
+    margin-bottom: 4rem;
+}
+
+.cartao_container img{
+    width: 100%;   
+    border-radius: 15% 15% 0% 0%;
+    margin-bottom: 1rem;
+  
+}
+
+.card_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.card_links a{
+    color: #1162AD;
+}
+
+.card_links2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.card_links2 a{
+    color: #1162AD;
 }
 
 
 
-.cartao_container img{
+.cartao_container2 img{
     width: 100%;   
-    border-radius: 10% 10% 0% 0%;
+    border-radius: 15% 15% 0% 0%;
+    margin-bottom: 1rem;
+}
+
+@media  screen and (min-width: 768px){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .cartao_container, 
+    .cartao_container2 img{
+        width: 200px;
+    }
+
+    
+    
+
+
+
 }

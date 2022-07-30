@@ -76,7 +76,6 @@ body{
         border: none;
         border-radius: 25px;
         width: 70%;
-        color: #1162AD;
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
@@ -85,6 +84,14 @@ body{
         
         
     }
+
+    #botao_cad_inst{
+        color: #1162AD;
+        text-decoration: none;
+
+    }
+
+
     
     @media  screen and (min-width: 768px) {
   
@@ -166,7 +173,6 @@ body{
             border: none;
             border-radius: 25px;
             width: 15%;
-            color: #1162AD;
             font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
@@ -174,11 +180,19 @@ body{
             cursor: pointer;
             transition: background .4s;
         }
-    
+
         .form_cad_inst button:hover{
             background-color: #1162AD;
-            color: #FFE071;
+        }
     
+        #botao_cad_inst{
+            color: #1162AD;
+            text-decoration: none;
+            transition: all .4s;
+    
+        }
+        #botao_cad_inst:hover{
+            color: #FFE071;
         }
     }
         

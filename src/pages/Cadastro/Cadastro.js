@@ -28,9 +28,9 @@ function Cadastro(){
                     </div>
                     <h1 className={styles.titulo}>Você é:</h1>
                     <div className={styles.botoes}>
-                        <button><Link to='/cadastroaluno'>Aluno</Link></button>
-                        <button>Instituição</button>
-                        <button><Link to='/cadastroinstituto'>Professor</Link></button>
+                        <button><Link className={styles.botao_cad} to='/cadastroaluno'>Aluno</Link></button>
+                        <button><Link className={styles.botao_cad} to='/cadastroinstituto'>Instituto</Link></button>
+                        <button><Link className={styles.botao_cad} to='#'>Professor</Link></button>
 
 
                     </div>

@@ -72,6 +72,15 @@ main{
     margin-bottom: 2rem;
 }
 
+.botao_cad{
+    text-decoration: none;
+    color: #1162AD;
+    transition: all .4s;
+  
+}
+
+
+
 @media  screen and (min-width: 768px) {
   
     body{
@@ -99,8 +108,14 @@ main{
 
     .botoes button:hover{
         background-color: #1162AD;
-        color: #FFE071;
+        
     }
+    .botao_cad:hover{
+        color: #FFE071;
+      
+    }
+
+    
 
 
 }
