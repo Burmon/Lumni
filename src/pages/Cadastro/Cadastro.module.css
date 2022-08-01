@@ -60,6 +60,7 @@ main{
 .botao_cad{
     margin-bottom: 2rem;
     text-decoration: none;
+    text-align: center;
     color: #1162AD;
     font-size: 20px;
     font-weight: bold;
@@ -106,6 +107,11 @@ main{
 
     .titulo{
         margin-bottom: 2rem;
+    }
+
+    .botao_cad{
+        width: 10%;
+       
     }
 
     .botao_cad:hover{
