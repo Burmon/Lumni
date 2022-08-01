@@ -14,7 +14,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         
         
     }
@@ -48,6 +48,7 @@ body{
 
     .logo h3{
         font-size: 25px;
+        color: #000;
     }
     
     .form_cad_inst {
@@ -74,7 +75,7 @@ body{
 
     #botao_cad_inst{
 
-    margin-bottom: 3rem;
+    margin-bottom: .3rem;
     margin-top: 2rem;
     text-decoration: none;
     color: #1162AD;
@@ -88,6 +89,11 @@ body{
 
     }
 
+    .voltar{
+        color: #1162AD;
+        font-size: 50px;
+        transition: all .5s;
+    }
 
     
     @media  screen and (min-width: 768px) {
@@ -114,12 +120,12 @@ body{
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 3rem;
+            margin-bottom: 0rem;
             
         }
         .logo img {
         
-            width: 4rem;
+            width: 3rem;
             display: flex;
             flex-direction: column;
             
@@ -131,10 +137,13 @@ body{
             letter-spacing: 5px;
             text-align: center;
             color: #1162AD;
-            font-size: 15px;        }
+            font-size: 15px;      
+            margin-bottom: 1rem;
+        }
 
         .logo h2{
             margin-top: 1rem;
+            margin-bottom: 1rem;
             letter-spacing: 5px;
             text-align: center;
             color: #1162AD;
@@ -162,22 +171,11 @@ body{
             text-align: center;
         }
 
-       
-        .form_cad_inst button{
-            padding: 0.8rem 0;
-            margin-top: 1rem;
-            background-color: #FFE071;
-            border: none;
-            border-radius: 25px;
-            width: 15%;
-            font-size: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            cursor: pointer;
-            transition: background .4s;
+        
+        .voltar:hover{
+            transform: scale(1.1);
         }
-
+    
         
     
         #botao_cad_inst{

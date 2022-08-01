@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
 import Modal from '../../components/Modal/Modal';
+import { Link } from 'react-router-dom'
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 function CadastroAluno(){
 
@@ -48,7 +50,7 @@ function CadastroAluno(){
                                 Cadastrar
                             </button>
                             {openModal && <Modal closeModal={setOpenModal} />}
-                            
+                            <Link className={styles.voltar} to='/cadastro'><IoIosArrowRoundBack/></Link>
                             
 
                         </form>

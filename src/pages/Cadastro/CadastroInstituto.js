@@ -37,7 +37,7 @@ function CadastroInstituto(){
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
                             <Link id={styles.botao_cad_inst} to='/homeinst'>Cadastrar</Link>
-                            <Link className={styles.voltar} to='/'><IoIosArrowRoundBack/></Link>
+                            <Link className={styles.voltar} to='/cadastro'><IoIosArrowRoundBack/></Link>
                         </form>
 
 
