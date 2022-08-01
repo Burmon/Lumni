@@ -45,11 +45,14 @@ main{
 
 .cartao_container{
     margin-bottom: 4rem;
+    background-color: #1162AD;
+    border-radius: 25px;
+    padding: 1rem;
 }
 
 .cartao_container img{
-    width: 100%;   
-    border-radius: 15% 15% 0% 0%;
+    width: 150px;  
+    margin-left: 2rem;
     margin-bottom: 1rem;
   
 }
@@ -59,31 +62,56 @@ main{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+   
 
+}
+
+.icone{
+    transition: all .4s;
 }
 
 .card_links a{
-    color: #1162AD;
-}
-
-.card_links2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-}
-
-.card_links2 a{
-    color: #1162AD;
+    color: #FFE071;
 }
 
 
 
-.cartao_container2 img{
-    width: 100%;   
-    border-radius: 15% 15% 0% 0%;
+h3{
+    text-align: center;
     margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #1162AD;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img_footer{
+    width: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer p{
+    color: #FFFFFF;
+    font-family: "Abel";
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.footer a{
+    color: #FFE071;
 }
 
 @media  screen and (min-width: 768px){
@@ -95,10 +123,12 @@ main{
         gap: 6rem;
     }
 
-    .cartao_container, 
-    .cartao_container2 img{
-        width: 200px;
-    }
+    
+.icone:hover{
+    transform: scale(1.1);
+}
+
+
 
     
     

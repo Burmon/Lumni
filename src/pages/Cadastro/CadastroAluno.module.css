@@ -171,23 +171,18 @@ body{
             text-transform: uppercase;
             letter-spacing: 5px;
             cursor: pointer;
-            transition: background .4s;
+            transition: all .5s
+            
         }
     
         .form_cad button:hover{
-            background-color: #1162AD;
-          
-    
-        }
-
-        .botao_cad_aluno{
-            text-decoration: none;
-            color: #1162AD;
-            transition: all .4s;
-        }
-
-        .botao_cad_aluno:hover{
+            transform: scale(1.1);
             color: #FFE071;
+            background-color: #1162AD;
         }
+
+        
+
+    
     }
         

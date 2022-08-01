@@ -1,7 +1,7 @@
 import styles from "./RecuperarSenha.module.css"
 import logo from "../../imgs/logo.png"
 import { Link } from 'react-router-dom'
-
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 function RecuperarSenha(){
     return(
@@ -31,7 +31,8 @@ function RecuperarSenha(){
 
             <div className={styles.input_recuperacao}>
             <input type="email" name="email"  placeholder="Seu e-mail"></input>
-            <button type="submit"><Link to='/recuperarsenha'>Enviar</Link></button>
+            <Link className={styles.botao} to='/recuperarsenha'>Enviar</Link>
+            <Link className={styles.voltar} to='/'><IoIosArrowRoundBack/></Link>
             </div>
             
             </main>

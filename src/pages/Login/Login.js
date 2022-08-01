@@ -37,23 +37,25 @@ function Login(){
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="button"><Link className={styles.botao} to='/homeinst'><p>Entrar</p></Link></button>
+                           
 
                         </form>
-
-
                         <div className={styles.checkbox}>
 
                             <input type="checkbox" id={styles.permacon} name="permanecer conectado" value="Permanecer conectado"/>
                             <label for="vehicle1">Permanecer conectado</label> 
 
                         </div>
+                        <nav >
+                        <Link  className={styles.botao} to='/homeinst'>Entrar</Link>
+                        </nav>
+                        
                       </div>
 
                       <section className={styles.links}>
 
-                        <Link to='/recuperarsenha' id={styles.link1}>Esqueci minha senha</Link>
-                        <Link to='/cadastro' id={styles.link2}>Inscreva-se</Link>
+                        <Link to='/recuperarsenha' id={styles.link}>Esqueci minha senha</Link>
+                        <Link to='/cadastro' id={styles.link}>Inscreva-se</Link>
 
                       </section>
 

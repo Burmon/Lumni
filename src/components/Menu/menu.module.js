@@ -48,6 +48,22 @@ export const Container = styled.section`
     padding-bottom: 3rem
   }
 
+  @media  screen and (min-width: 768px) {
+
+    .linkmenu{
+      padding: 0.8rem 1rem;
+      transition: all .4s;
+      border-radius: 3rem;
+    }
+
+    .linkmenu:hover{
+      color:#FFE071;
+      background-color: #1162AD;
+      
+    }
+
+  }
+
   ${({ isVisible }) => isVisible && css`
     opacity: 1;
     pointer-events: auto;

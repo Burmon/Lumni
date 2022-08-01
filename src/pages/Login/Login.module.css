@@ -56,36 +56,34 @@ body{
     
     }
     
-    .formulario button{
-        padding: 0.8rem 0;
-        background-color: #FFE071;
-        border: none;
-        border-radius: 25px;
-        width: 70%;
-        color: #1162AD;
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        cursor: pointer;
-        
-        
+
+    .checkbox{
+        margin-bottom: 2rem;
+    }
+
+    .login nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
     
     .botao{
-        text-decoration: none;
-        transition: all;
-        color: #1162AD;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1162AD;
+    letter-spacing: 3px;
+    background-color: #FFE071;
+    padding: 0.8rem  3rem;
+    border-radius: 25px;
+    transition: all  .5s;
     }
-    .botao p:hover{
-       color: #FFE071;
-    }
+   
     
-    
-    .checkbox{
-        margin: 1rem 0;
-    }
+
 
     label{
         margin-left: 10px;
@@ -96,22 +94,22 @@ body{
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        margin-top: 0.5rem;
-        font-weight: bolder;
+        margin-top: 3rem;
+        font-weight: bold;
     
     }
     
-    #link1{
-        margin-bottom: 0.5rem;
+
+    #link{
         text-decoration: none;
         color: #1162AD;
+        margin-bottom: 0.8rem;
+       
+        border-radius: 50px;
+        transition: all .4s;
     }
-    
-    #link2{
-        text-decoration: none;
-        color: #1162AD;
-    }
-    
+
+
     .footer{
         background-color: #1162AD;
         display: flex;
@@ -161,7 +159,7 @@ body{
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             
         }
         .logo img {
@@ -201,32 +199,23 @@ body{
             text-align: center;
         }
 
-       
-        .formulario button{
-            padding: 0.8rem 0;
-            background-color: #FFE071;
-            border: none;
-            border-radius: 25px;
-            width: 10%;
-            color: #1162AD;
-            font-size: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            cursor: pointer;
-            transition: background .4s;
-        }
-    
-        .formulario button:hover{
-            background-color: #1162AD;
+        
+
+        .botao:hover{
             color: #FFE071;
-    
-        }
+            background-color: #1162AD;
+            transform: scale(1.1);
+         }
         
         
     
         .checkbox{
             margin: 1rem 26.7rem;
+        }
+
+        .botao{           
+            width: 8%;
+            margin: 1rem;
         }
         
         .links{
@@ -234,22 +223,23 @@ body{
             justify-content:center;
             align-items: center;
             flex-direction: column;
-            margin-top: 0.5rem;
-            font-weight: 800;
+            margin-top: 0rem;
+            font-weight: 100;
             
         
         }
-        
-        #link1{
-            margin-bottom: 0.5rem;
-            text-decoration: none;
-            color: #1162AD;
+
+        #link{
+            padding: 0.2rem 0.5rem;
         }
         
-        #link2{
-            text-decoration: none;
-            color: #1162AD;
-        }
+       
+    #link:hover{
+        background-color: #1162AD;
+        color: #FFE071;
+       
+    }
+
     
         
     

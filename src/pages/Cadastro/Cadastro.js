@@ -1,7 +1,7 @@
 import styles from "./Cadastro.module.css"
 import logo from "../../imgs/logo.png"
 import { Link } from 'react-router-dom'
-
+import { IoIosArrowRoundBack } from "react-icons/io";
 function Cadastro(){
    return(
     <div >
@@ -28,10 +28,10 @@ function Cadastro(){
                     </div>
                     <h1 className={styles.titulo}>Você é:</h1>
                     <div className={styles.botoes}>
-                        <button><Link className={styles.botao_cad} to='/cadastroaluno'>Aluno</Link></button>
-                        <button><Link className={styles.botao_cad} to='/cadastroinstituto'>Instituto</Link></button>
-                        <button><Link className={styles.botao_cad} to='#'>Professor</Link></button>
-
+                       <Link className={styles.botao_cad} to='/cadastroaluno'>Aluno</Link>
+                        <Link className={styles.botao_cad} to='/cadastroinstituto'>Instituto</Link>
+                        <Link className={styles.botao_cad} to='#'>Professor</Link>
+                        <Link className={styles.voltar} to='/'><IoIosArrowRoundBack/></Link>
 
                     </div>
 

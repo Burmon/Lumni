@@ -5,7 +5,7 @@ import logo from "../../imgs/logo.png"
 import { useState } from "react";
 import {Menu}  from "../../components/Menu/Menu";
 import {Header} from "../../components/Header/Header"
-
+import { IoIosAdd } from "react-icons/io";
 
 function HomeInst(){
     const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -40,18 +40,17 @@ function HomeInst(){
 
              </div>
 
-          
+             <h1 id={styles.mural_titulo}>Mural</h1>
             <div className={styles.mural_container}>
-                <h1 id={styles.mural_titulo}>Mural</h1>
-                <section id={styles.mural}>
+                
+               
                     <h4>11/07/2022</h4>
                     <h2>Aviso</h2>
                     <h3>Devido às fortes chuvas, a escola irá suspender as atividades presenciais no dia de hoje.</h3>
-                </section>
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" fill="#1162AD" id={styles.mural_botao} className="bi bi-plus" viewBox="0 0 16 16">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                </svg>
-            </div>
+                    <IoIosAdd className={styles.botao_add}/>
+
+
+              </div>
            
             </main>
             <div className={styles.footer}>

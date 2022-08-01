@@ -52,67 +52,48 @@ body{
     }
   
   /* -------MURAL------- */
+
+  #mural_titulo{
+    font-family: "Abel";
+    font-size: 50px;
+    color: #1162AD;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+ 
   
   .mural_container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #FFE071;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 15px;
     
   }
-  
-  #mural_titulo{
-    font-family: "Abel";
-    font-size: 50px;
-    color: #1162AD;
-  }
-  
-  
-  #mural{
-    text-align: center;
-    background-color: #FFE071;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+
+  .mural_container h2{
+    font-size: 30px;
     margin-bottom: 1rem;
-    padding-left: 1rem;
-  }
-  
-  #mural h4{
-    font-family: "Abel";
-    font-size: 10;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  #mural h2{
-    font-family: "Abel";
-    font-size: 25px;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    margin-top: 0.5rem;
     color: red;
   }
-  
-  #mural h3{
-    font-family: "Abel";
-    font-size: 25px;
-    margin-bottom: 0.5rem;
-    
-  }
-  
-  #mural_botao{
-    
-    background-color: #FFE071;
-    border: none;
-    border-radius: 50%;
-    width: 11.5%;
-    color: #1162AD;
+
+  .mural_container h3{
     font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    cursor: pointer;
-    margin-bottom: 2rem;
+    color: #000000;
   }
+  
+ .botao_add{
+  color: #1162AD;
+  font-size: 35px;
+  transition: all .4s;
+  border-radius: 25px;
+ }
+  
+  
 
   .footer{
     background-color: #1162AD;
@@ -168,42 +149,20 @@ body{
     background-color: #1162AD;
     border-radius: 25px;
     width: 30%;
-    
+   
   }
 
-  .perfil_container img{
-    margin-bottom: 2rem;
-    width: 50%;
-
+  .mural_container{
+    margin-left: 15rem ;
+    margin-right: 15rem;
   }
 
-  .perfil_container h1{
-    margin-bottom: 1rem;
-  }
+  .botao_add:hover{
+    color: #FFE071;
+    background-color: #1162AD;
+   }
 
-  .perfil_container h2{
-    margin-bottom: 0;
-  }
-
-#mural{
-
-    width: 50%;
-    border-radius: 25px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-}
-
-#mural_botao{
-    width: 2.8%;
-    transition: all .4s;
-}
-
-#mural_botao:hover {
-   width: 3.8%;
-    
-
-}
+  
 
 
   

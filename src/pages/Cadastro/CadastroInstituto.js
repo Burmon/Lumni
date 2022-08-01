@@ -1,7 +1,7 @@
 import styles from './CadastroInstituto.module.css'
 import logo from "../../imgs/logo.png"
 import { Link } from 'react-router-dom'
-
+import { IoIosArrowRoundBack } from "react-icons/io";
 function CadastroInstituto(){
     return(
         <div>
@@ -36,8 +36,8 @@ function CadastroInstituto(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Nome da instituição"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button type="submit"><Link id={styles.botao_cad_inst} to='/homeinst'>Cadastrar</Link></button>
-
+                            <Link id={styles.botao_cad_inst} to='/homeinst'>Cadastrar</Link>
+                            <Link className={styles.voltar} to='/'><IoIosArrowRoundBack/></Link>
                         </form>
 
 

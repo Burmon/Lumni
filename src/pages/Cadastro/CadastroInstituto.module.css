@@ -70,24 +70,21 @@ body{
     
     }
     
-    .form_cad_inst button{
-        padding: 0.8rem 0;
-        background-color: #FFE071;
-        border: none;
-        border-radius: 25px;
-        width: 70%;
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        cursor: pointer;
-        
-        
-    }
+    
 
     #botao_cad_inst{
-        color: #1162AD;
-        text-decoration: none;
+
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #1162AD;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: #FFE071;
+    padding: 0.8rem  3rem;
+    border-radius: 25px;
+    transition: all  .5s;
 
     }
 
@@ -181,18 +178,18 @@ body{
             transition: background .4s;
         }
 
-        .form_cad_inst button:hover{
-            background-color: #1162AD;
-        }
+        
     
         #botao_cad_inst{
-            color: #1162AD;
+            
             text-decoration: none;
             transition: all .4s;
     
         }
         #botao_cad_inst:hover{
+            background-color: #1162AD;
             color: #FFE071;
+            transform: scale(1.1);
         }
     }
         

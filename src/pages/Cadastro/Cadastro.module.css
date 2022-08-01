@@ -17,13 +17,13 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     
     
 }
 .logo img {
 
-    width: 6rem;
+    width: 5rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -57,24 +57,23 @@ main{
     
 }
 
-.botoes button{
-    padding: 0.8rem 0;
-    background-color: #FFE071;
-    border: none;
-    border-radius: 25px;
-    width: 100%;
-    color: #1162AD;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    cursor: pointer;
-    margin-bottom: 2rem;
-}
-
 .botao_cad{
+    margin-bottom: 2rem;
     text-decoration: none;
     color: #1162AD;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: #FFE071;
+    padding: 1rem  4rem;
+    border-radius: 25px;
+    transition: all  .5s;
+
+}
+
+.voltar{
+    color: #1162AD;
+    font-size: 50px;
     transition: all .4s;
   
 }
@@ -95,25 +94,32 @@ main{
         justify-content: center;
         flex-direction: column;
         background-image: url(../../imgs/bg.png);
-        border-radius: 25px;
+        border-radius: 15px;
         padding-top: 2rem;
         padding-bottom: 2rem;
         
     }
 
-    .botoes button{
-        width: 30%;
-        transition: background .4s;
+    .logo img{
+        width: 4rem;
     }
 
-    .botoes button:hover{
-        background-color: #1162AD;
-        
+    .titulo{
+        margin-bottom: 2rem;
     }
+
     .botao_cad:hover{
         color: #FFE071;
-      
+        background-color: #1162AD;
+        transform: scale(1.1, 1.1);
     }
+
+  
+    .voltar:hover{
+        transform: scale(1.1);
+     }
+  
+    
 
     
 
