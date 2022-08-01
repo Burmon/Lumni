@@ -70,7 +70,7 @@ body{
     
     }
     
-    .form_cad button{
+    .botao{
         padding: 0.8rem 0;
         background-color: #FFE071;
         border: none;
@@ -159,7 +159,7 @@ body{
         }
 
        
-        .form_cad button{
+        .botao{
             padding: 0.8rem 0;
             margin-top: 1rem;
             background-color: #FFE071;
@@ -175,7 +175,7 @@ body{
             
         }
     
-        .form_cad button:hover{
+        .botao:hover{
             transform: scale(1.1);
             color: #FFE071;
             background-color: #1162AD;

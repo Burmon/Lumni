@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
-import Modal from '../../components/Modal';
+import Modal from '../../components/Modal/Modal';
 
 function CadastroAluno(){
 
@@ -40,8 +40,7 @@ function CadastroAluno(){
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
-                            <button
-                             className="openModalBtn"
+                            <button className={styles.botao}
                              onClick={() => {
                                 setOpenModal(true);
                                 }}
