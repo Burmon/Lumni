@@ -15,7 +15,9 @@ export function Menu({ menuIsVisible, setMenuIsVisible }) {
 
 
         <Link to='/homealuno' className="linkmenu">Home</Link>
+
         <Link to='/Nossotime' className="linkmenu">NossoTime</Link>
+        
         <Link to='/' className="linkmenu">Sair</Link>
 
 

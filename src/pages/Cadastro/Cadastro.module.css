@@ -116,13 +116,18 @@ main{
 
     .botao_cad:hover{
         color: #FFE071;
+        
         background-color: #1162AD;
+
         transform: scale(1.1, 1.1);
+
     }
 
   
     .voltar:hover{
+
         transform: scale(1.1);
+
      }
   
     
