@@ -1,4 +1,4 @@
-import { Container } from './Menu.module';
+import { Container } from './MenuStyle';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
 import {  Link } from "react-router-dom";
