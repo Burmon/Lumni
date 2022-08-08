@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from 'react';
 import { withRouter, Redirect, Link } from "react-router-dom";
 import  AuthConfig  from '../../Auth/Config';
-import { AuthContext } from '../../Auth/AuthContext';
+import { AuthCont } from '../../Auth/AuthContext';
 import styles from "./Login.module.css"
 import logo from "../../imgs/logo.png"
 
@@ -26,7 +26,7 @@ const Logar = withRouter(({history}) => {
             [history],
     );
 
-    const { usuario } = useContext(AuthContext);
+    const { usuario } = useContext(AuthCont);
 
     if(usuario){
         return <Redirect to='/homealuno'/>

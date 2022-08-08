@@ -14,24 +14,19 @@ import CadastroAluno from "../src/pages/Cadastro/CadastroAluno";
 
 
 function App() {
-
-  
-
   return (
-    <div className="App">
+    <div>
       <AuthProvider>
-      
-         <Switch>
-          <Route exact path="/" element={<Logar />} />
-          <Route exact path="/homeinst" element={<HomeInst />} />
-          <Route exact path="/homealuno" element={<HomeAluno />} />
-          <Route exact path="/nossotime" element={<NossoTime />} />
-          <Route exact path="/cadastro" element={<Cadastro />} />
-          <RotaPrivada path="/cadastroaluno" element={<CadastroAluno />} />
-          <Route exact path="/cadastroinstituto" element={<CadastroInstituto />} />
-          <Route exact path="/recuperarsenha" element={<RecuperarSenha />} />
-          </Switch>
-      
+        <Switch>
+          <Route exact path="/" component={Logar} />
+          <Route path="/homeinst" component={HomeInst} />
+          <Route path="/homealuno" component={HomeAluno} />
+          <Route path="/nossotime" component={NossoTime} />
+          <Route path="/cadastro" component={Cadastro} />
+          <RotaPrivada path="/cadastroaluno" component={CadastroAluno} />
+          <Route path="/cadastroinstituto" component={CadastroInstituto} />
+          <Route path="/recuperarsenha" component={RecuperarSenha} />
+        </Switch>
       </AuthProvider>
     </div>
   );
