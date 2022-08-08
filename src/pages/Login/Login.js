@@ -1,11 +1,36 @@
-import {  Link } from "react-router-dom";
+import React, { useCallback, useContext } from 'react';
+import { withRouter, Redirect, Link } from "react-router-dom";
+import  AuthConfig  from '../../Auth/Config';
+import { AuthContext } from '../../Auth/AuthContext';
 import styles from "./Login.module.css"
 import logo from "../../imgs/logo.png"
 
 
-function Login(){
+const Logar = withRouter(({history}) => {
+    
+    const loginFunc = useCallback(
+        async (event) => {
+            event.preventDefault();
 
-  
+            const {email, senha} = event.target.elements;
+
+            try{
+                await AuthConfig
+                .auth()
+                .signInWithEmailAndPassword(email.value, senha.value);
+                history.push('/homealuno');
+                }catch(error){
+                    console.log(error);
+                }
+            },
+            [history],
+    );
+
+    const { usuario } = useContext(AuthContext);
+
+    if(usuario){
+        return <Redirect to='/homealuno'/>
+    }
 
     return(
         <div>
@@ -33,7 +58,7 @@ function Login(){
 
                     <div className={styles.login}>
    
-                        <form className={styles.formulario}>
+                        <form className={styles.formulario} onSubmit={loginFunc}>
 
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
@@ -75,4 +100,5 @@ function Login(){
        
     )
 }
-export default Login
+)
+export default Logar

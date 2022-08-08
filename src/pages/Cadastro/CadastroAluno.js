@@ -1,18 +1,44 @@
+import React, { useCallback } from 'react';
+import { withRouter } from 'react-router-dom';
+import  AuthConfig  from '../../Auth/Config';
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import styles from './CadastroAluno.module.css'
 import logo from "../../imgs/logo.png"
 import Modal from '../../components/Modal/Modal';
-import { Link } from 'react-router-dom'
 import { IoIosArrowRoundBack } from "react-icons/io";
 
-function CadastroAluno(){
+ const CadastroAluno = withRouter((props)=>{
 
-    const [openModal, setOpenModal] = useState(false);
+   
+
+    const { history } = props;
+    const cadastroFunc = useCallback(
+        async (event) => {
+            event.preventDefault();
+
+            const { nome, email, senha } = event.target.elements;
+            try{
+                await AuthConfig
+                    .auth()
+                    .createUserWithNameEmailAndPassword(email.value, senha.value, nome.value);
+
+                    history.push('/homealuno');
+            } catch(error) {
+                console.log(error);
+            }
+        
+            
+        },
+        [history],
+    );
+
+     const [openModal, setOpenModal] = useState(false);
 
     return(
         <div>
 
-<head>
+            <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -36,9 +62,9 @@ function CadastroAluno(){
 
                     </div>
 
-                    <div className={styles.input_cad}>
+                    <div className={styles.input_cad} onSubmit={cadastroFunc}>
         
-                        <form className={styles.form_cad}>
+                        <form className={styles.form_cad} onSubmit={cadastroFunc}>
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
                             <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
                             <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
@@ -46,6 +72,7 @@ function CadastroAluno(){
                              onClick={() => {
                                 setOpenModal(true);
                                 }}
+                            
                                 >
                                 Cadastrar
                             </button>
@@ -71,5 +98,6 @@ function CadastroAluno(){
         </div>
     )
 }
+);
 
 export default CadastroAluno

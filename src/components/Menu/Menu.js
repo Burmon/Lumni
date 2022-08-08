@@ -2,6 +2,7 @@ import { Container } from './MenuStyle';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
 import {  Link } from "react-router-dom";
+import  authConfig  from '../../Auth/Config';
 
 export function Menu({ menuIsVisible, setMenuIsVisible }) {
   useEffect(() => {
@@ -18,7 +19,7 @@ export function Menu({ menuIsVisible, setMenuIsVisible }) {
 
         <Link to='/Nossotime' className="linkmenu">NossoTime</Link>
         
-        <Link to='/' className="linkmenu">Sair</Link>
+        <Link onClick={() => authConfig.auth().signOut()} className="linkmenu">Sair</Link>
 
 
       </nav>
