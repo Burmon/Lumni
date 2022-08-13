@@ -1,8 +1,5 @@
-body{
-    background-image: url(../../imgs/bg.png);
-}
-
-    main{
+    .login_container{
+        background-image: url(../../imgs/bg.png);
         display: flex;
         font-family: 'Abel';
         justify-content: center;
@@ -20,10 +17,10 @@ body{
     }
     .logo img {
     
-        width: 8rem;
+        width: 6rem;
         display: flex;
         flex-direction: column;
-        padding-bottom: 1rem;
+        padding-bottom: 0.8rem;
         
     }
     
@@ -94,7 +91,7 @@ body{
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        margin-top: 3rem;
+        margin-top: 2rem;
         font-weight: bold;
     
     }
@@ -110,40 +107,13 @@ body{
     }
 
 
-    .footer{
-        background-color: #1162AD;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #img_footer{
-        width: 4rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .footer p{
-        color: #FFFFFF;
-        font-family: "Abel";
-        font-size: 10px;
-        padding-bottom: 0.5rem;
-    }
-
-    .footer a{
-        color: #FFE071;
-    }
+   
 
     @media  screen and (min-width: 768px) {
   
-        body{
+        .login_container{
             background-color: #1162AD;
             background-image: none;
-            
-        }
-    
-        main{
             display: flex;
             font-family: 'Abel';
             justify-content: center;

@@ -18,21 +18,9 @@ function Login(){
   
 
     return(
-        <div>
-            <head>
-                <meta charset="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-                <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-                <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"/>
-                <link rel="shortcut icon" href="../imagens/shortcut_aba.png" type="image/x-icon" />
-            </head>
-            <body>
-
-                <main>
+        <div className={styles.login_container}>
+      
+           
 
                     <div className={styles.logo}>
 
@@ -83,14 +71,9 @@ function Login(){
 
                      
 
-                 </main>
-               <div className={styles.footer}>
-
-                 <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
-                 <p>Produzido por <a>Guardiões Tech</a></p>
-  
-               </div>
-            </body>
+            
+            
+         
 
         </div>
 
