@@ -1,36 +1,21 @@
-import React, { useCallback, useContext } from 'react';
-import { withRouter, Redirect, Link } from "react-router-dom";
-import  AuthConfig  from '../../Auth/Config';
-import { AuthCont } from '../../Auth/AuthContext';
+import React, {useState} from 'react'
+import {login} from '../../components/Autenticação/auth'
+import {  Link } from "react-router-dom";
 import styles from "./Login.module.css"
 import logo from "../../imgs/logo.png"
 
 
-const Logar = withRouter(({history}) => {
-    
-    const loginFunc = useCallback(
-        async (event) => {
-            event.preventDefault();
-
-            const {email, senha} = event.target.elements;
-
-            try{
-                await AuthConfig
-                .auth()
-                .signInWithEmailAndPassword(email.value, senha.value);
-                history.push('/homealuno');
-                }catch(error){
-                    console.log(error);
-                }
-            },
-            [history],
-    );
-
-    const { usuario } = useContext(AuthCont);
-
-    if(usuario){
-        return <Redirect to='/homealuno'/>
+function Login(){
+    const [form,setForm] = useState({
+        email:'',
+        password:''
+    })
+    const handleSubmit = async(e)=>{
+        e.preventDefault();
+        await login(form);
+  
     }
+  
 
     return(
         <div>
@@ -58,10 +43,22 @@ const Logar = withRouter(({history}) => {
 
                     <div className={styles.login}>
    
-                        <form className={styles.formulario} onSubmit={loginFunc}>
+                        <form className={styles.formulario} onSubmit={handleSubmit}>
 
-                            <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
-                            <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
+                            <input type="email"
+                             name="email" id={styles.email}
+                              placeholder="Seu e-mail"
+                              onChange={(e) => 
+                              setForm({...form, email: e.target.value})}
+                              required/>
+
+                            <input type="password"
+                             name="senha"
+                              id={styles.senha}
+                              placeholder="Sua senha"
+                              onChange={(e) => 
+                              setForm({...form, password: e.target.value})}
+                              required/>
                            
 
                         </form>
@@ -100,5 +97,4 @@ const Logar = withRouter(({history}) => {
        
     )
 }
-)
-export default Logar
+export default Login

@@ -1,22 +1,24 @@
+import React, { useState } from "react";
+import {register} from '../../components/Autenticação/auth'
 import styles from './CadastroInstituto.module.css'
 import logo from "../../imgs/logo.png"
 import { Link } from 'react-router-dom'
 import { IoIosArrowRoundBack } from "react-icons/io";
 function CadastroInstituto(){
+
+    const [form,setForm] = useState({
+        email:'',
+        password:''
+    })
+    const handleSubmit = async(e)=>{
+        e.preventDefault();
+        await register(form);
+  
+    }
     return(
         <div>
 
-            <head>
-                <meta charset="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-                <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-                <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"/>
-                <link rel="shortcut icon" href="../imagens/shortcut_aba.png" type="image/x-icon" />
-            </head>
+           
             <body>
 
                 <main>
@@ -32,11 +34,27 @@ function CadastroInstituto(){
 
                     <div className={styles.input_cad_inst}>
         
-                        <form className={styles.form_cad_inst}>
-                            <input type="name" name="nome" id={styles.nome} placeholder="Nome da instituição"></input>
-                            <input type="email" name="email" id={styles.email} placeholder="Seu e-mail" required/>
-                            <input type="password" name="senha" id={styles.senha} placeholder="Sua senha" required/>
+                        <form className={styles.form_cad_inst} onSubmit={handleSubmit}>
+                            <input type="name"
+                             name="nome" id={styles.nome}
+                            placeholder="Nome da instituição"
+                            />
+
+                            <input type="email"
+                             name="email"
+                             id={styles.email}
+                             placeholder="Seu e-mail"
+                             onChange={(e) => setForm({...form, email: e.target.value})}
+                             required/>
+
+                            <input type="password"
+                             name="senha" id={styles.senha}
+                             placeholder="Sua senha" 
+                             onChange={(e) => setForm({...form, password: e.target.value})}
+                             required/>
+
                             <Link id={styles.botao_cad_inst} to='/homeinst'>Cadastrar</Link>
+
                             <Link className={styles.voltar} to='/cadastro'><IoIosArrowRoundBack/></Link>
                         </form>
 
