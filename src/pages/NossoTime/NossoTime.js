@@ -69,7 +69,7 @@ return(
 
                                 <a href="https://github.com/Grazielly-Araujo"><GoMarkGithub className={styles.icone} size={45}/></a>
                                 <a href="https://www.instagram.com/geminiana_pan/"><FaInstagram className={styles.icone} size={45}/></a>
-                                <a href="https://www.linkedin.com/in/grazielly-galv%C3%A3o-ara%C3%BAjo-b21977208/"><FaLinkedin className={styles.icone} className="link" size={45}/></a>
+                                <a href="https://www.linkedin.com/in/grazielly-galv%C3%A3o-ara%C3%BAjo-b21977208/"><FaLinkedin className={styles.icone} size={45}/></a>
                             </nav>
 
                     </div>
