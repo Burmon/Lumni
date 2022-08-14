@@ -8,13 +8,13 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 
 function CadastroAluno(){
 
-    const [form,setForm] = useState({
+    const [formreg,setFormreg] = useState({
         email:'',
         password:''
     })
-    const handleSubmit = async(e)=>{
+    const handleSub = async(e)=>{
         e.preventDefault();
-        await register(form);
+        await register(formreg);
   
     }
 
@@ -25,7 +25,7 @@ function CadastroAluno(){
 
         <div>
 
-          
+        <title>Lumni | Cadastro</title>
      
             
             <body>
@@ -43,19 +43,19 @@ function CadastroAluno(){
 
                     <div className={styles.input_cad}>
         
-                        <form className={styles.form_cad} onSubmit={handleSubmit}>
+                        <form className={styles.form_cad} onSubmit={handleSub}>
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
 
                             <input type="email" 
                             name="email" id={styles.email} 
                             placeholder="Seu e-mail" required 
-                            onChange={(e) => setForm({...form, email: e.target.value})}/>
+                            onChange={(e) => setFormreg({...formreg, email: e.target.value})}/>
 
                             
                             <input type="password"
                              name="senha" id={styles.senha}
                               placeholder="Sua senha" required
-                              onChange={(e) => setForm({...form, password: e.target.value})}
+                              onChange={(e) => setFormreg({...formreg, password: e.target.value})}
                               />
                             <button className={styles.botao}
                              onClick={() => {

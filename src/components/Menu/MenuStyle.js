@@ -71,6 +71,7 @@ export const Container = styled.section`
 
     .fechar{
       color:#1162AD;
+      cursor: pointer;
     }
 
     > svg {

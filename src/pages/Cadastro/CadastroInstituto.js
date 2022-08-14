@@ -17,7 +17,7 @@ function CadastroInstituto(){
     }
     return(
         <div>
-
+            <title>Lumni | Cadastro</title>
            
             <body>
 

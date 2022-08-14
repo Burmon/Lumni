@@ -19,7 +19,7 @@ function Login(){
 
     return(
         <div className={styles.login_container}>
-      
+            <title>Lumni | Login</title>
            
 
                     <div className={styles.logo}>

@@ -42,7 +42,7 @@ export const Container = styled.header`
     .mobile {
      
       color: #FFE071;
-      
+      cursor: pointer;
     }
 
     @media(max-width: 900px) {
