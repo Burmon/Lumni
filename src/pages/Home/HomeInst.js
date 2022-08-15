@@ -5,8 +5,7 @@ import logo from "../../imgs/logo.png"
 import { useState } from "react";
 import {Menu}  from "../../components/Menu/Menu";
 import {Header} from "../../components/Header/Header"
-import { IoIosAdd } from "react-icons/io";
-
+import Form from "../../components/Mural/Form"
 function HomeInst(){
     const [menuIsVisible, setMenuIsVisible] = useState(false);
 
@@ -33,13 +32,7 @@ function HomeInst(){
 
              <h1 id={styles.mural_titulo}>Mural</h1>
             <div className={styles.mural_container}>
-                
-               
-                    <h4>11/07/2022</h4>
-                    <h2>Aviso</h2>
-                    <h3>Devido às fortes chuvas, a escola irá suspender as atividades presenciais no dia de hoje.</h3>
-                    <IoIosAdd className={styles.botao_add}/>
-
+                <Form/>
 
               </div>
            
