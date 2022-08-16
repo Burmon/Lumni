@@ -4,6 +4,7 @@ import styles from './CadastroInstituto.module.css'
 import logo from "../../imgs/logo.png"
 import { Link } from 'react-router-dom'
 import { IoIosArrowRoundBack } from "react-icons/io";
+import InputCnpj from "../../components/Mascara/MaskCnpj"
 function CadastroInstituto(){
 
     const [form,setForm] = useState({
@@ -16,13 +17,11 @@ function CadastroInstituto(){
   
     }
     return(
-        <div>
+        <div className={styles.cad_inst_container}>
             <title>Lumni | Cadastro</title>
            
-            <body>
-
+           <body>
                 <main>
-
                     <div className={styles.logo}>
 
                        <img src={logo} alt="Logo"/>
@@ -35,6 +34,9 @@ function CadastroInstituto(){
                     <div className={styles.input_cad_inst}>
         
                         <form className={styles.form_cad_inst} onSubmit={handleSubmit}>
+
+                            <InputCnpj id={styles.nome}/>
+
                             <input type="name"
                              name="nome" id={styles.nome}
                             placeholder="Nome da instituição"
@@ -43,13 +45,13 @@ function CadastroInstituto(){
                             <input type="email"
                              name="email"
                              id={styles.email}
-                             placeholder="Seu e-mail"
+                             placeholder="E-mail"
                              onChange={(e) => setForm({...form, email: e.target.value})}
                              required/>
 
                             <input type="password"
                              name="senha" id={styles.senha}
-                             placeholder="Sua senha" 
+                             placeholder="Senha" 
                              onChange={(e) => setForm({...form, password: e.target.value})}
                              required/>
 

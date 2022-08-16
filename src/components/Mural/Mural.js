@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import axios from "./postorder";
+import axios from "./Postorder";
 
-import Form from "./form";
-import "./styles.css";
+import Form from "./Form";
 
-class App extends Component {
+
+class Mural extends Component {
   state = {
     posts: []
   };
@@ -48,8 +47,7 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Mural;
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+
  

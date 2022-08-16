@@ -50,12 +50,7 @@ function Login(){
                            
 
                         </form>
-                        <div className={styles.checkbox}>
-
-                            <input type="checkbox" id={styles.permacon} name="permanecer conectado" value="Permanecer conectado"/>
-                            <label for="vehicle1">Permanecer conectado</label> 
-
-                        </div>
+                       
                         <nav >
                         <Link  className={styles.botao} to='/homeinst'>Entrar</Link>
                         </nav>

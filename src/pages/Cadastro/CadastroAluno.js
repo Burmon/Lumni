@@ -5,7 +5,7 @@ import logo from "../../imgs/logo.png";
 import Modal from '../../components/Modal/Modal';
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundBack } from "react-icons/io";
-
+import InputCpf from "../../components/Mascara/MaskCpf"
 function CadastroAluno(){
 
     const [formreg,setFormreg] = useState({
@@ -23,14 +23,12 @@ function CadastroAluno(){
     return(
 
 
-        <div>
+        <div className={styles.cad_container}>
 
         <title>Lumni | Cadastro</title>
      
             
-            <body>
-
-                <main>
+          
 
                     <div className={styles.logo}>
 
@@ -45,6 +43,7 @@ function CadastroAluno(){
         
                         <form className={styles.form_cad} onSubmit={handleSub}>
                             <input type="name" name="nome" id={styles.nome} placeholder="Seu nome"></input>
+                            <InputCpf id={styles.nome} />
 
                             <input type="email" 
                             name="email" id={styles.email} 
@@ -77,9 +76,7 @@ function CadastroAluno(){
 
                      
 
-                 </main>
-               
-            </body>
+            
 
 
 

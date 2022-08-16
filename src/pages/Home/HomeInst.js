@@ -6,6 +6,7 @@ import { useState } from "react";
 import {Menu}  from "../../components/Menu/Menu";
 import {Header} from "../../components/Header/Header"
 import Form from "../../components/Mural/Form"
+import Mural from "../../components/Mural/Mural"
 function HomeInst(){
     const [menuIsVisible, setMenuIsVisible] = useState(false);
 
@@ -33,7 +34,7 @@ function HomeInst(){
              <h1 id={styles.mural_titulo}>Mural</h1>
             <div className={styles.mural_container}>
                 <Form/>
-
+                
               </div>
            
             </main>
