@@ -125,7 +125,7 @@ body{
         }
         .logo img {
         
-            width: 3rem;
+            width: 8rem;
             display: flex;
             flex-direction: column;
             
@@ -137,7 +137,7 @@ body{
             letter-spacing: 5px;
             text-align: center;
             color: #1162AD;
-            font-size: 15px;      
+            font-size: 25px;      
             margin-bottom: 1rem;
         }
 
