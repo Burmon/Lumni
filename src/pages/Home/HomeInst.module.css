@@ -164,7 +164,6 @@
       border-radius: 25px;
       margin-top: 2rem;
       padding-top: 1rem;
-      padding-bottom: 2rem;
       margin-left: 2rem ;
       margin-right: 2rem;
       
@@ -186,9 +185,7 @@
    
   }
 
-  .form_mural{
-    
-  }
+  
 
 
   .form_mural h3{
@@ -199,17 +196,26 @@
     
   }
 
+  .form_mural{
+    border-radius: 0% 0% 25px 25px;
+  }
+
+
   .form_mural input{
     width: 20%;
-   
-   
+   padding: .5rem;
+   font-size: 25px;
   
   }
   
+
+
   .form_mural textarea{
     width: 30%;
-   margin-bottom: 2rem;
-  
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 25px;
   }
   
   .botao_add{
