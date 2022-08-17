@@ -34,7 +34,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     transform: scale(0.7);
     transition: .7s;
   }
