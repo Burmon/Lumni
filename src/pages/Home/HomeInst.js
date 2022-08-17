@@ -24,19 +24,23 @@ function HomeInst() {
     setLoading(false);
   }
 
+  async function fetchMural() {
+    const list = [];
+    const muralFirebase = await db.collection("mural").get();
+    const muralData = muralFirebase.docs;
+    muralData.map((mural) => {
+      const data = mural.data();
+      list.push(data);
+    });
+   setMural(list);
+  }
+
+
   useEffect(() => {
-    async function fetchMural() {
-      const list = [];
-      const muralFirebase = await db.collection("mural").get();
-      const muralData = muralFirebase.docs;
-      muralData.map((mural) => {
-        const data = mural.data();
-        list.push(data);
-      });
-     setMural(list);
-    }
     fetchMural();
   }, []);
+
+
 
   console.log(mural)
 
@@ -74,7 +78,11 @@ function HomeInst() {
               placeholder="Sua informação"
               onChange={(e) => setBody(e.target.value)}
             />
-            <IoIosAdd className={styles.botao_add} onClick={submitHandler} disabled={loading}/>
+            <IoIosAdd className={styles.botao_add} onClick={() => {
+              submitHandler()
+              fetchMural()
+
+            }} disabled={loading}/>
              
 
             <div className={styles.lista_mural}>
