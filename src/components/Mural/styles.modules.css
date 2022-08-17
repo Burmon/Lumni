@@ -1,0 +1,13 @@
+.card_mural{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFE071;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+
+  

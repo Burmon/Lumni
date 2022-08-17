@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "./Postorder";
-
+import styles from "./styles.modules.css"
 import Form from "./Form";
 
 
@@ -30,14 +30,14 @@ class Mural extends Component {
   render() {
     console.log(this.state.posts);
     return (
-      <div className="App m-5">
+      <div>
         <Form />
-        <div className="row">
+        <div>
           {this.state.posts.map(post => {
             return (
-              <div className="list-group-item mb-4 p-5 col-md-6">
-                <div className="card-title">{post.title}</div>
-                <div className="card-body">{post.body}</div>
+              <div className={styles.card_mural}>
+                <div className={styles.titulo_mural}>{post.title}</div>
+                <div className={styles.corpo_mural}>{post.body}</div>
               </div>
             );
           })}

@@ -1,52 +1,104 @@
+import styles from "./HomeInst.module.css";
+import persona from "../../imgs/persona.jpg";
+import logo from "../../imgs/logo.png";
+import { useState, useEffect } from "react";
+import { Menu } from "../../components/Menu/Menu";
+import { Header } from "../../components/Header/Header";
+import { db } from "../../components/Autenticação/firebase";
+import { IoIosAdd } from "react-icons/io";
+function HomeInst() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
 
-import styles from "./HomeInst.module.css"
-import persona from "../../imgs/persona.jpg"
-import logo from "../../imgs/logo.png"
-import { useState } from "react";
-import {Menu}  from "../../components/Menu/Menu";
-import {Header} from "../../components/Header/Header"
-import Form from "../../components/Mural/Form"
-import Mural from "../../components/Mural/Mural"
-function HomeInst(){
-    const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const [titulo, setTitulo] = useState("");
+  const [body, setBody] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [mural, setMural] = useState([]);
 
-    return(
+  async function submitHandler() {
+    setLoading(true);
+    const date = new Date();
+    const mural = await db.collection("mural").doc();
+    mural.set({ titulo, body });
+    setTitulo("");
+    setBody("");
+    setLoading(false);
+  }
+
+  useEffect(() => {
+    async function fetchMural() {
+      const list = [];
+      const muralFirebase = await db.collection("mural").get();
+      const muralData = muralFirebase.docs;
+      muralData.map((mural) => {
+        const data = mural.data();
+        list.push(data);
+      });
+     setMural(list);
+    }
+    fetchMural();
+  }, []);
+
+  console.log(mural)
+
+  return (
+    <div>
+      <title>Lumni | Perfil</title>
+      <Header setMenuIsVisible={setMenuIsVisible} />
+      <Menu menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
+
+      
+
+      <div className={styles.container}>
+        <div >
+          <div className={styles.perfil_container}>
+            <img src={persona} alt="persona" />
+            <h1>Bem vindo!</h1>
+            <h2>Instituto</h2>
+          </div>
+        </div>
         <div>
-                <title>Lumni | Perfil</title>
             
-             <Menu
-                menuIsVisible={menuIsVisible}
-                setMenuIsVisible={setMenuIsVisible}
+          <div className={styles.form_mural}>
+          <h3>Mural</h3>
+            <input
+              type="text"
+              value={titulo}
+              placeholder="Título"
+              onChange={(e) => setTitulo(e.target.value)}
             />
             
-             <Header setMenuIsVisible={setMenuIsVisible}/>
+            <textarea
+              rows="3" 
+              cols="33"
+              value={body}
+              placeholder="Sua informação"
+              onChange={(e) => setBody(e.target.value)}
+            />
+            <IoIosAdd className={styles.botao_add} onClick={submitHandler} disabled={loading}/>
+             
 
-             <body>
-                <main>
-             <div className={styles.perfil_container}>
-    
-                <img src={persona} alt="persona"/>
-                <h1>Bem vindo!</h1>
-                <h2>Instituto</h2>
+            <div className={styles.lista_mural}>
+            {mural.map((m, i) => <div key={i}>
+                <div className={styles.titulo}><span>{m.titulo}</span></div>
+                <div className={styles.corpo}><span >{m.body}</span></div>
+            </div>)}
+          </div>
+          </div>
 
-             </div>
-
-             <h1 id={styles.mural_titulo}>Mural</h1>
-            <div className={styles.mural_container}>
-                <Form/>
-                
-              </div>
-           
-            </main>
-            <div className={styles.footer}>
-
-                <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
-                <p>Produzido por <a>Guardiões Tech</a></p>
-
-            </div>
-            </body>
+         
         </div>
-    )
+
+     
+      </div>
+      <div className={styles.footer}>
+          <img src={logo} alt="Logo rodapé" id={styles.img_footer} />
+          <p>
+            Produzido por <a>Guardiões Tech</a>
+          </p>
+        </div>
+    </div>
+    
+  );
 }
 
-export default HomeInst
+export default HomeInst;

@@ -1,7 +1,4 @@
-body{
-    background-image: url(../../imgs/bg.png); 
-  }
-  
+
   
   
   
@@ -15,10 +12,8 @@ body{
       flex-direction: column;
       align-items: center;
       margin: 3rem 0;
-    
-      width: 10  0%;
-     
-     
+      margin-left: 2rem ;
+      margin-right:2rem;
       background-color: #1162AD;
       border-radius: 25px;
       
@@ -50,30 +45,86 @@ body{
       margin-bottom: 2rem;
   
     }
-  
-  /* -------MURAL------- */
 
-  #mural_titulo{
-    font-family: "Abel";
-    font-size: 50px;
-    color: #1162AD;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
+
+
+
+.form_mural h3{
+  color: #1162AD;
+  font-family: "Abel";
+  font-size: 30px;
+}
+
+.form_mural{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFE071;
+  padding-top: 1rem;
+}
+
+.form_mural input{
+  width: 50%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  border-radius: 50px;
+  border: none;
+  background-color: #FFFFFF;   
+  text-align: center;
+  font-family: "Abel";
+  color: #1162AD;
  
-  
-  .mural_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #FFE071;
-    padding: 1rem;
-    text-align: justify;
-    border-radius: 15px;
-    
-  }
-  
+
+}
+
+.form_mural textarea{
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFFFFF;   
+  font-family: "Abel";
+  text-align: center;
+  color: #1162AD;
+
+}
+
+.botao_add{
+  color: #1162AD;
+  font-size: 40px;
+  transition: all .4s;
+  border-radius: 25px;
+}
+
+.lista_mural{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1162AD;
+  width: 70%;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+  font-family: "Abel";
+  padding-top: 3rem;
+} 
+
+.titulo{
+
+  color: #FFE071;
+  text-align: center;
+   font-size: 25px;
+   
+}
+.corpo{
+  color:#FFFFFF;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+
 
   .footer{
     background-color: #1162AD;
@@ -104,15 +155,18 @@ body{
 
    
 
-  main{
+ .container{
       display: flex;
       font-family: 'Abel';
       justify-content: center;
       flex-direction: column;
       background-image: url(../../imgs/bg.png);
       border-radius: 25px;
-      padding-top: 2rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
       padding-bottom: 2rem;
+      margin-left: 2rem ;
+      margin-right: 2rem;
       
   }
 
@@ -132,9 +186,34 @@ body{
    
   }
 
-  .mural_container{
-    margin-left: 15rem ;
-    margin-right: 15rem;
+  .form_mural{
+    
+  }
+
+
+  .form_mural h3{
+    font-size: 50px;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+
+  .form_mural input{
+    width: 20%;
+   
+   
+  
+  }
+  
+  .form_mural textarea{
+    width: 30%;
+   margin-bottom: 2rem;
+  
+  }
+  
+  .botao_add{
+    margin-bottom: 1rem;
   }
 
   .botao_add:hover{

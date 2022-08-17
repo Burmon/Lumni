@@ -24,7 +24,6 @@ export const Container = styled.section`
   > svg {
     position: absolute;
     top: 1rem;
-    right: 1rem;
     transform: rotate(45deg);
     transition: .7s;
   }
