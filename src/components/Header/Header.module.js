@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 95%;
+  width: 92%;
   background: #1162AD; 
   padding: 1rem 1rem;
   display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.header`
     
 
       @media(max-width: 500px) {
-        width: 50px;
+        width:100%;
       }
     }
 

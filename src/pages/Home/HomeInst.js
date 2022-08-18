@@ -6,6 +6,8 @@ import { Menu } from "../../components/Menu/Menu";
 import { Header } from "../../components/Header/Header";
 import { db } from "../../components/Autenticação/firebase";
 import { IoIosAdd } from "react-icons/io";
+import { IoClose } from 'react-icons/io5';
+
 function HomeInst() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
@@ -85,12 +87,14 @@ function HomeInst() {
             }} disabled={loading}/>
              
 
-            <div className={styles.lista_mural}>
-            {mural.map((m, i) => <div key={i}>
+            
+            {mural.map((m, i) => <div className={styles.lista_mural} key={i}>
+               
                 <div className={styles.titulo}><span>{m.titulo}</span></div>
                 <div className={styles.corpo}><span >{m.body}</span></div>
+                <IoClose size={30} onClick={() => setMenuIsVisible(false) } className={styles.fechar_mural}/>
             </div>)}
-          </div>
+        
           </div>
 
          

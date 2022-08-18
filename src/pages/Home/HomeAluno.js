@@ -6,6 +6,7 @@ import {Menu}  from "../../components/Menu/Menu";
 import {Header} from "../../components/Header/Header"
 
 
+
 function HomeAluno(){
 
     const [menuIsVisible, setMenuIsVisible] = useState(false);

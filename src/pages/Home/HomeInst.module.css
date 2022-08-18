@@ -98,6 +98,7 @@
 }
 
 .lista_mural{
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -107,14 +108,14 @@
   border-radius: 25px;
   margin-bottom: 2rem;
   font-family: "Abel";
-  padding-top: 3rem;
+  padding-top: .5rem;
 } 
 
 .titulo{
-
+  margin-bottom: 2rem;
   color: #FFE071;
   text-align: center;
-   font-size: 25px;
+   font-size: 30px;
    
 }
 .corpo{
@@ -124,6 +125,16 @@
   font-size: 20px;
 }
 
+.fechar_mural{
+  color: red;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transition: all .4s;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
 
 
   .footer{
@@ -217,6 +228,10 @@
     font-size: 20px;
     border-radius: 25px;
   }
+
+  .lista_mural{
+    width:40%;
+  }
   
   .botao_add{
     margin-bottom: 1rem;
@@ -225,9 +240,14 @@
   .botao_add:hover{
     color: #FFE071;
     background-color: #1162AD;
+    
    }
 
-  
+   .fechar_mural:hover{
+    color: #FFFFFF;
+    background-color: red;
+    transform: scale(1.1);
+   }
 
 
   
