@@ -21,8 +21,8 @@ return(
             />
             
              <Header setMenuIsVisible={setMenuIsVisible}/>
-            <body>
-                <main>
+            <div className={styles.big_container}>
+            <div className={styles.main_container}>
                    
 
                                 <div className={styles.logo}>
@@ -79,7 +79,7 @@ return(
 
 
 
-                </main>
+                 </div>
                 <div className={styles.footer}>
 
                     <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
@@ -87,7 +87,7 @@ return(
 
                 </div>
 
-            </body>
+                </div>
     </div>
 )
 }

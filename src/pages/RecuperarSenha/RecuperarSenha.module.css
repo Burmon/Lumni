@@ -1,8 +1,8 @@
-body{
+.big_container{
     background-image: url(../../imgs/bg.png);
 }
     
-    main{
+    .container{
         display: flex;
         font-family: 'Abel';
         justify-content: center;
@@ -98,13 +98,13 @@ body{
     
     @media  screen and (min-width: 768px) {
   
-        body{
+        .big_container{
             background-color: #1162AD;
             background-image: none;
             
         }
     
-        main{
+        .container{
             display: flex;
             font-family: 'Abel';
             justify-content: center;
@@ -160,7 +160,7 @@ body{
             width: 25%;
             padding: 1rem;
             margin-bottom: 1rem;
-            font: inherit;
+            font-size: 20px;
             border-radius: 50px;
             border: solid 0.5px #1162AD;
             background-color: #FFFFFF;   

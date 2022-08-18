@@ -1,15 +1,15 @@
-body{
+.big_container{
     background-image: url(../../imgs/bg.png);
     
 }
 
 
-main{
+.container{
     display: flex;
     font-family: 'Abel';
     justify-content: center;
     flex-direction: column;
-    margin: 3rem 4rem;
+    padding-top: 3rem ;
     
 }
 .logo{
@@ -83,22 +83,20 @@ main{
 
 @media  screen and (min-width: 768px) {
   
-    body{
-        background-color: #1162AD;
-        background-image: none;
-        
-    }
+  
 
-    main{
+    .container{
         display: flex;
         font-family: 'Abel';
         justify-content: center;
         flex-direction: column;
         background-image: url(../../imgs/bg.png);
         border-radius: 15px;
-        padding-top: 2rem;
+        padding-top: 0;
         padding-bottom: 2rem;
-        
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin:0;
     }
 
     .logo{
@@ -111,7 +109,7 @@ main{
     }
     .logo img {
     
-        width:8rem;
+        width:5rem;
         display: flex;
         margin-top: 2rem;
         margin-bottom: .5rem;

@@ -6,8 +6,10 @@ import Modal from "../../components/Modal/Modal";
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import InputCpf from "../../components/Mascara/MaskCpf";
+import {db} from "../../components/Autenticação/firebase"
 
 function CadastroAluno() {
+  
   const [formreg, setFormreg] = useState({
     name: "",
     cpf: "",
@@ -23,7 +25,16 @@ function CadastroAluno() {
 
   function cpfHandler() {}
 
+  
+  async function BancoUsuario() {
+    const { email, password, name, cpf } = formreg
+    const dbUsuario = await db.collection("usuarios").doc();
+    dbUsuario.set({ email, password, name, cpf });
+   
+  }
+
   return (
+    <div className={styles.big_container}>
     <div className={styles.cad_container}>
       <title>Lumni | Cadastro</title>
 
@@ -41,8 +52,14 @@ function CadastroAluno() {
             name="nome"
             id={styles.nome}
             placeholder="Seu nome"
+            onChange={(e) =>
+              setFormreg({ ...formreg, name: e.target.value })
+            }
           ></input>
-          <InputCpf id={styles.nome} onChange={cpfHandler} />
+          <InputCpf id={styles.nome} onChange={(e)=>{
+            cpfHandler()
+            setFormreg({ ...formreg, cpf: e.target.value })
+          }}  />
 
           <input
             type="email"
@@ -67,6 +84,7 @@ function CadastroAluno() {
             className={styles.botao}
             onClick={() => {
               setOpenModal(true);
+              BancoUsuario();
             }}
           >
             Cadastrar
@@ -77,6 +95,7 @@ function CadastroAluno() {
           </Link>
         </form>
       </div>
+    </div>
     </div>
   );
 }

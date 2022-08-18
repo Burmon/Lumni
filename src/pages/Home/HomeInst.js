@@ -46,6 +46,8 @@ function HomeInst() {
 
   console.log(mural)
 
+  
+
   return (
     <div>
       <title>Lumni | Perfil</title>

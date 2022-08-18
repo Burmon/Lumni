@@ -20,9 +20,9 @@ function HomeAluno(){
             />
             
              <Header setMenuIsVisible={setMenuIsVisible}/>
-             <body>
+             <div className={styles.big_container}>
             
-                <main>
+              
               
                
              <div className={styles.perfil_aluno_container}>
@@ -38,14 +38,15 @@ function HomeAluno(){
             <button type="submit" onClick="#">Cadastrar</button>
             </div>
             
-            </main>
+            
             <div className={styles.footer}>
 
                 <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
                 <p>Produzido por <a>Guardiões Tech</a></p>
 
             </div>
-            </body>
+            </div>
+            
         </div>
     )
 }

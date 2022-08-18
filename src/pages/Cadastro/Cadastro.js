@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 function Cadastro() {
   return (
-    <div>
+    <div className={styles.big_container}>
       <title>Lumni | Cadastro</title>
-      <body>
-        <main>
+     <div className={styles.container}>
           <div className={styles.logo}>
             <img src={logo} alt="Logo" />
             <h1>LUMNI</h1>
@@ -27,8 +26,7 @@ function Cadastro() {
               <IoIosArrowRoundBack />
             </Link>
           </div>
-        </main>
-      </body>
+          </div>
     </div>
   );
 }

@@ -4,7 +4,8 @@
         font-family: 'Abel';
         justify-content: center;
         flex-direction: column;
-        margin: 3rem 4rem;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
     }
     .logo{
         display: flex;
@@ -42,10 +43,10 @@
     }
     
     .formulario input{
-        width: 100%;
+        width: 70%;
         padding: 1rem;
         margin-bottom: 1rem;
-        font: inherit;
+        font-size: 20px;
         border-radius: 50px;
         border: solid 0.5px #1162AD;
         background-color: #FFFFFF;   
@@ -110,6 +111,7 @@
    
 
     @media  screen and (min-width: 768px) {
+      
   
         .login_container{
             background-color: #1162AD;
@@ -122,7 +124,7 @@
             border-radius: 25px;
             padding-top: 2rem;
             padding-bottom: 2rem;
-            
+            margin: 0;
         }
         .logo{
             display: flex;

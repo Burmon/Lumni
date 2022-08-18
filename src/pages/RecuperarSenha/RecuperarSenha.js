@@ -7,8 +7,9 @@ function RecuperarSenha(){
     return(
         <div>
             <title>Lumni | Recuperação</title>
-             <body>
-                <main>
+             <div className={styles.big_container}>
+             <div className={styles.container}>
+             
                 <div className={styles.logo}>
 
                     <img src={logo} alt="Logo"/>
@@ -23,9 +24,9 @@ function RecuperarSenha(){
             <Link className={styles.voltar} to='/'><IoIosArrowRoundBack/></Link>
             </div>
             
-            </main>
+            </div>
            
-            </body>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,8 @@
-main{
+.big_container{
+    background-image: url(../../imgs/bg.png); 
+    font-family: "Abel";
+  }
+.main_container{
     display: flex;
     font-family: 'Abel';
     justify-content: center;

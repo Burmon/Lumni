@@ -1,10 +1,14 @@
+.big_container{
+    background-image: url(../../imgs/bg.png);
+    font-family: 'Abel';
+}
+
 .cad_container{
-        background-image: url(../../imgs/bg.png);
+      
         display: flex;
-        font-family: 'Abel';
         justify-content: center;
         flex-direction: column;
-        margin: 3rem 4rem;
+        padding-top: 2rem ;
         border-radius: 25px;
     }
     .logo{
@@ -57,7 +61,7 @@
     }
     
     .form_cad input{
-        width: 100%;
+        width: 70%;
         padding: 1rem;
         margin-bottom: 1rem;
         font: inherit;
@@ -69,11 +73,12 @@
     }
     
     .botao{
+        margin-top: 1rem;
         padding: 0.8rem 0;
         background-color: #FFE071;
         border: none;
         border-radius: 25px;
-        width: 70%;
+        width: 50%;
         color: #1162AD;
         font-size: 20px;
         font-weight: bold;
@@ -93,23 +98,9 @@
     
     @media  screen and (min-width: 768px) {
   
-        body{
-            background-color: #1162AD;
-            background-image: none;
-            
-        }
+       
     
-        main{
-            display: flex;
-            font-family: 'Abel';
-            justify-content: center;
-            flex-direction: column;
-            background-image: url(../../imgs/bg.png);
-            border-radius: 25px;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            
-        }
+        
         .logo{
             display: flex;
             justify-content: center;

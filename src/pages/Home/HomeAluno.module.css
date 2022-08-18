@@ -1,5 +1,7 @@
-body{
+
+.big_container{
     background-image: url(../../imgs/bg.png); 
+    font-family: "Abel";
   }
   
  
@@ -30,10 +32,7 @@ body{
   
     }
   
-    .perfil_aluno_container h1, h2{
-      font-family: "Abel";
-      
-    }
+    
   
     .perfil_aluno_container h1{
       font-size: 30px;
@@ -59,10 +58,11 @@ body{
     }
     
     .input_intitucional input{
-        width: 100%;
+      
+        width: 70%;
         padding: 1rem;
-        margin-bottom: 1rem;
-        font: inherit;
+        margin-bottom: 2rem;
+        font-size: 20px;
         border-radius: 50px;
         border: solid 0.5px #1162AD;
         background-color: #FFFFFF;   
@@ -71,17 +71,18 @@ body{
     }
     
     .input_intitucional button{
-        padding: 0.8rem 0;
+        padding: 0.9rem 0;
         background-color: #FFE071;
         border: none;
         border-radius: 25px;
-        width: 70%;
+        width: 60%;
         color: #1162AD;
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 5px;
         cursor: pointer;
+        margin-bottom: 2rem;
         transition: all .4s;
         
     }
@@ -117,17 +118,6 @@ body{
 
    
 
-  main{
-      display: flex;
-      font-family: 'Abel';
-      justify-content: center;
-      flex-direction: column;
-      background-image: url(../../imgs/bg.png);
-      border-radius: 25px;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      
-  }
 
 
   .perfil_aluno_container{
