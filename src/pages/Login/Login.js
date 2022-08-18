@@ -64,7 +64,12 @@ function Login(){
 
                       </section>
 
-                     
+                      <div className={styles.footer}>
+
+                <img src={logo} alt="Logo rodapé" id={styles.img_footer}/>
+                <p>Produzido por <a>Guardiões Tech</a></p>
+
+            </div>
 
             
             

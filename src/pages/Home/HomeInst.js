@@ -15,6 +15,7 @@ function HomeInst() {
   const [body, setBody] = useState("");
   const [loading, setLoading] = useState(false);
   const [mural, setMural] = useState([]);
+  const [nome, setNome] = useState("")
 
   async function submitHandler() {
     setLoading(true);
@@ -38,6 +39,8 @@ function HomeInst() {
   }
 
 
+  
+
   useEffect(() => {
     fetchMural();
   }, []);
@@ -49,7 +52,7 @@ function HomeInst() {
   
 
   return (
-    <div>
+    <div className={styles.container}>
       <title>Lumni | Perfil</title>
       <Header setMenuIsVisible={setMenuIsVisible} />
       <Menu menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />

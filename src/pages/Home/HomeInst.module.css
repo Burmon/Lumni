@@ -1,10 +1,6 @@
 
+
   
-  
-  
-  
-  
-    /* --------APRESENTAÇÃO-------- */
   
     .perfil_container{
       display: flex;
@@ -39,7 +35,7 @@
       
     }
   
-    .perfil_container h2{
+    h2{
       font-size: 30px;
       color: #FFFFFF;
       margin-bottom: 2rem;

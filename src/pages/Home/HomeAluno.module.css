@@ -1,14 +1,14 @@
 
 .big_container{
-    background-image: url(../../imgs/bg.png); 
-    font-family: "Abel";
+  background-image: url(../../imgs/bg.png);
+  display: flex;
+  font-family: 'Abel';
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
   }
   
  
- 
-  
- 
-  
     .perfil_aluno_container{
       display: flex;
       justify-content: center;
