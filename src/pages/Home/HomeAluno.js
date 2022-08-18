@@ -37,6 +37,23 @@ function HomeAluno(){
             <input type="name" name="nome"  placeholder="Código da instituição"></input>
             <button type="submit" onClick="#">Cadastrar</button>
             </div>
+
+            <h1 className={styles.titulo_colegio}> Colégio Start</h1>
+            <div className={styles.mural_container}>
+                
+            <h2>Mural</h2>
+                <section className={styles.card_mural}>
+                    
+                    <section className={styles.mural_micro}>
+                        <h3>Aviso</h3>
+                        <h4>Devido às fortes chuvas, a escola estará suspendendo as aulas 
+                            no dia de hoje, recomendamos à todos que fiquem em suas casas
+                            caso estejam seguros, caso contrário a procura de um abrigo é 
+                            mais que necessária. Atenciosamente, coordenação.
+                        </h4>
+                    </section>
+                </section>
+            </div>
             
             
             <div className={styles.footer}>
