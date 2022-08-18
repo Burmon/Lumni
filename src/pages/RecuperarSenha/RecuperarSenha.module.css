@@ -1,5 +1,7 @@
 .big_container{
     background-image: url(../../imgs/bg.png);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
     
     .container{
@@ -99,12 +101,6 @@
     @media  screen and (min-width: 768px) {
   
         .big_container{
-            background-color: #1162AD;
-            background-image: none;
-            
-        }
-    
-        .container{
             display: flex;
             font-family: 'Abel';
             justify-content: center;
@@ -112,9 +108,11 @@
             background-image: url(../../imgs/bg.png);
             border-radius: 25px;
             padding-top: 2rem;
-            padding-bottom: 2rem;
-            
+            padding-bottom: 0;
+            margin: 0;
         }
+    
+       
         .logo{
             display: flex;
             justify-content: center;

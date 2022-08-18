@@ -52,15 +52,16 @@ function HomeInst() {
   
 
   return (
-    <div className={styles.container}>
+    <div >
+   
       <title>Lumni | Perfil</title>
       <Header setMenuIsVisible={setMenuIsVisible} />
       <Menu menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
 
-      
-
+      <div className={styles.big_container}>
+    
       <div className={styles.container}>
-        <div >
+    
           <div className={styles.perfil_container}>
             <img src={persona} alt="persona" />
             <h1>Bem vindo!</h1>
