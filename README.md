@@ -36,7 +36,7 @@
 
 # **Introdução** 
 
-O Lumni é um projeto que teve inicio a partir dos `17 Objetivos de Desenvolvimento Sustentável (ODS) estabelecido pela ONU`. Com base no Objetivo #04 - Educação de qualidade Buscamos atender as demandas do novo ensino médio com Praticidade, agilidade e organização visasndo o protagonismo estudatil.
+O Lumni é um projeto que teve inicio a partir dos `17 Objetivos de Desenvolvimento Sustentável (ODS) estabelecido pela ONU`. Com base no Objetivo #04 - Educação de qualidade, buscamos atender as demandas do novo ensino médio com Praticidade, agilidade e organização visasndo o protagonismo estudatil.
  
 
 <br>
